@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
+import Features from './components/Features';
+import About from './components/About';
+import Tokenomics from './components/Tokenomics';
 
-function App() {
+
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-black-100 min-h-screen'>
+      <Header />
+      <Main />
+      <Features />
+      <About />
+      <Tokenomics />
     </div>
+
   );
-}
+};
 
 export default App;
