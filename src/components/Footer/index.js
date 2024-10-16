@@ -8,13 +8,13 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => (
   <div className="bg-[#010f14] py-10 flex justify-between items-center px-[100px]">
-    <div className='flex flex-col space-y-5'>
+    <div className='flex flex-col sm-items-center space-y-5'>
       <div className="flex space-x-5 items-center">
         <img src='https://res.cloudinary.com/drpddho9b/image/upload/v1729068475/Group_20_tqkg7i.png' 
         alt='logo'
         className='w-[70px] h-[70px]' />
 
-        <h1 className="text-white font-bold text-4xl">EthAi</h1>
+        <h1 className="text-white font-bold text-2xl md:text-4xl">EthAi</h1>
       </div>
       <div className="flex items-center space-x-4">
         <div className='bg-[#092327] p-3 rounded-full' >
@@ -34,7 +34,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className='flex flex-col items-end w-[700px] space-y-5'>
+    <div className='hidden md:flex flex-col items-end w-[700px] space-y-5'>
       <h1 className='font-semibold text-5xl  text-white leading-[4.0rem]'>“Designed for traders of today, just like you."</h1>
       <div className="flex items-center justify-between pr-2 space-x-4 border w-[700px] border-gray-50 rounded-xl">
         <input

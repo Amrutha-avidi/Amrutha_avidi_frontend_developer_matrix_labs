@@ -10,9 +10,9 @@ const data = [
 const COLORS = ['#62f0fe', '#0a99a6', '#186e76'];
 
 const Tokenomics = () => (
-  <div className='bg-[#00161d] min-h-[700px] flex flex-col items-center '>
+  <div className='bg-[#00161d] min-h-[700px] flex flex-col items-center pt-[50px] md:pt-[100px]'>
     <h1 className='text-5xl text-white mb-10'>Tokenomics</h1>
-    <div className='flex flex-row justify-between space-x-[200px]'>
+    <div className='flex flex-col justify-center items-center space-y-8 md:flex md:flex-row md:justify-between md:space-x-[200px]'>
       <PieChart width={400} height={400}>
         <Pie
           data={data}
@@ -33,8 +33,8 @@ const Tokenomics = () => (
         <Legend />
       </PieChart>
 
-      <div className=' flex flex-col space-y-4 text-white text-2xl '>
-        <div className='bg-[#08222e] rounded-2xl flex flex-col space-y-2 px-[65px] py-10'>
+      <div className=' flex flex-col space-y-4 text-white text-lg md:text-2xl '>
+        <div className='bg-[#08222e] rounded-2xl flex flex-col space-y-2 px-[30px] py-5 md:px-[65px] md:py-10'>
           <div className='flex flex-row space-x-0'>
             <p className="w-[200px]">Name</p>
             <div className='w-[200px] flex flex-row items-center space-x-4'>
@@ -84,7 +84,7 @@ const Tokenomics = () => (
           </div>
         </div>
 
-        <div className='bg-[#08222e] rounded-2xl flex flex-col space-y-2 px-[65px] py-10'>
+        <div className='bg-[#08222e] rounded-2xl flex flex-col space-y-2 px-[30px] py-5 md:px-[65px] md:py-10'>
           <div className='flex flex-row space-x-0'>
             <p className="w-[200px]">Team</p>
             <div className='w-[200px] flex flex-row items-center space-x-4'>

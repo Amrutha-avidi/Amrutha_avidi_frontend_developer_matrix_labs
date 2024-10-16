@@ -13,7 +13,8 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className='bg-black-100 min-h-screen'>
+    <div  >
+  
       <Header />
       <Main />
       <Features />

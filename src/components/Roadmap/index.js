@@ -3,14 +3,14 @@ import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 const Roadmap = () => {
     return (
-        <div className='bg-[#00161d] min-h-[700px]'>
+        <div className='bg-[#00161d] min-h-[700px] pt-[50px] md:pt-[100px]'>
             <h1 className='text-5xl text-white text-center mb-10'>Roadmap</h1>
 
-            <div className='flex'>
+            <div className=' flex flex-col md:flex md:flex-row'>
                 {/* Left content section */}
-                <div className='flex-1 flex flex-col justify-center p-10 space-y-12 ml-[250px]'>
+                <div className='flex-1 flex flex-col justify-center p-10 space-y-8 md:space-y-12 md:ml-[250px]'>
                     <p className='bg-white w-[90px] text-center rounded-md p-2 font-semibold'>PHASE 1</p>
-                    <h1 className='font-bold text-white text-4xl'>Kicking Off</h1>
+                    <h1 className='font-bold text-white text-2xl md:text-4xl'>Kicking Off</h1>
                     <div className='flex flex-col space-y-4'>
                         {[
                             "Launch of ETHAi: Officially",
@@ -20,7 +20,7 @@ const Roadmap = () => {
                         ].map((text, index) => (
                             <div key={index} className='flex flex-row justify-start items-center space-x-2'>
                                 <IoCheckmarkCircleOutline color='#98e3f0' fontSize={24} />
-                                <p className='text-white text-2xl'>{text}</p>
+                                <p className='text-white text-xl md:text-2xl'>{text}</p>
                             </div>
                         ))}
                     </div>
@@ -28,15 +28,17 @@ const Roadmap = () => {
                 {/* Right image section */}
                 <div className="flex-1">
                     <img
-                        className='h-[600px] w-full object-cover'
+                        className='h-[400px] md:h-[600px] w-full object-cover'
                         src='https://res.cloudinary.com/drpddho9b/image/upload/v1729057569/1_chxve7.png'
                         alt='road1'
                         style={{ maskImage: 'linear-gradient(to right, transparent, white 20%, white 80%, transparent)' }}
                     />
                 </div>
             </div>
-            <div className='flex'>
-                 <div className="flex-1">
+
+
+            <div className='flex flex-col md:flex-row'>
+                <div className='flex-1 md:order-1'>
                     <img
                         className='h-[600px] w-full object-cover'
                         src='https://res.cloudinary.com/drpddho9b/image/upload/v1729057568/2_p3p1l6.png'
@@ -44,9 +46,9 @@ const Roadmap = () => {
                         style={{ maskImage: 'linear-gradient(to right, transparent, white 20%, white 80%, transparent)' }}
                     />
                 </div>
-                <div className='flex-1 flex flex-col justify-center p-10 space-y-12 ml-[250px]'>
+                <div className='flex-1 flex flex-col justify-center p-10 space-y-8 md:space-y-12 md:ml-[250px] order-1'>
                     <p className='bg-white w-[90px] text-center rounded-md p-2 font-semibold'>PHASE 2</p>
-                    <h1 className='font-bold text-white text-4xl'>Bigger Insights</h1>
+                    <h1 className='font-bold text-white text-2xl md:text-4xl'>Bigger Insights</h1>
                     <div className='flex flex-col space-y-4'>
                         {[
                             "Introduction of Advanced AI Agents",
@@ -56,18 +58,18 @@ const Roadmap = () => {
                         ].map((text, index) => (
                             <div key={index} className='flex flex-row justify-start items-center space-x-2'>
                                 <IoCheckmarkCircleOutline color='#98e3f0' fontSize={24} />
-                                <p className='text-white text-2xl'>{text}</p>
+                                <p className='text-white text-xl md:text-2xl'>{text}</p>
                             </div>
                         ))}
                     </div>
                 </div>
-               
             </div>
-            <div className='flex'>
+
+            <div className=' flex flex-col md:flex md:flex-row'>
                 {/* Left content section */}
-                <div className='flex-1 flex flex-col justify-center p-10 space-y-12 ml-[250px]'>
+                <div className='flex-1 flex flex-col justify-center p-10 space-y-8 md:space-y-12 md:ml-[250px]'>
                     <p className='bg-white w-[90px] text-center rounded-md p-2 font-semibold'>PHASE 3</p>
-                    <h1 className='font-bold text-white text-4xl'>Full Power</h1>
+                    <h1 className='font-bold text-white text-2xl md:text-4xl'>Full Power</h1>
                     <div className='flex flex-col space-y-4'>
                         {[
                             "Introduction of Enhanced Features",
@@ -77,7 +79,7 @@ const Roadmap = () => {
                         ].map((text, index) => (
                             <div key={index} className='flex flex-row justify-start items-center space-x-2'>
                                 <IoCheckmarkCircleOutline color='#98e3f0' fontSize={24} />
-                                <p className='text-white text-2xl'>{text}</p>
+                                <p className='text-white text-xl md:text-2xl'>{text}</p>
                             </div>
                         ))}
                     </div>
@@ -85,9 +87,9 @@ const Roadmap = () => {
                 {/* Right image section */}
                 <div className="flex-1">
                     <img
-                        className='h-[600px] w-full object-cover'
+                        className='h-[400px] md:h-[600px] w-full object-cover'
                         src='https://res.cloudinary.com/drpddho9b/image/upload/v1729057568/3_m8ncwm.png'
-                        alt='road1'
+                        alt='road3'
                         style={{ maskImage: 'linear-gradient(to right, transparent, white 20%, white 80%, transparent)' }}
                     />
                 </div>
